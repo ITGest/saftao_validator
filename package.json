@@ -1,0 +1,30 @@
+{
+  "name": "itgest_saft_validator",
+  "productName": "ITGest: Validador de SAFT-AO",
+  "version": "1.0.0",
+  "description": "Aplicação para validar SAFT-AO",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . XMLV --overwrite  --platform=win32 --arch=ia32 --icon=agt_iva.jpg --prune=true --out=release-builds --version-string.CompanyName=ITGEST --version-string.FileDescription=ITGEST --version-string.ProductName='Validar SAFT-AO'"
+  },
+  "keywords": [
+    "SAFT-AO",
+    "ITGEST",
+    "Validar SAFT",
+    "AGT",
+    "SAFT ANGOLA"
+  ],
+  "author": "ITGEST",
+  "license": "LIC_ITG_V1",
+  "devDependencies": {
+    "electron": "^8.5.5",
+    "electron-packager": "^14.2.0"
+  },
+  "dependencies": {
+    "electron-alert": "^0.1.5",
+    "electron-progressbar": "^1.2.0",
+    "jquery": "^3.4.1",
+    "xsd-schema-validator": "^0.6.0"
+  }
+}
